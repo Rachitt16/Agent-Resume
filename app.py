@@ -135,8 +135,8 @@ Show atleast Top 10-20 results with direct apply link
   
 #====== ======
 
-code = get_jobs(agent)
-DISPLAY.HTML(code)
+# code = get_jobs(agent)
+# DISPLAY.HTML(code)
 
 
 
