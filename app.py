@@ -14,6 +14,13 @@ import numpy as np
 
 # ====== api keys ========
 
+#to give title
+st.title("AI RESUME GENRATION")
+st.write("""this app helps user to build customized professional
+resume with latest job apply links""")
+
+st.image("bg.png")
+
 GOOGLE_API_KEY = "AQ.Ab8RN6Kjesilv7EvdFQcf-FWTguHfY47ia38gtGgwEhM3X28mg"
 GROQ_API_KEY = "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"
 TAVILY_API_KEY = "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"
@@ -24,8 +31,9 @@ model = ChatGoogleGenerativeAI(
 model = 'gemini-3.5-flash-lite',
 google_api_key = GOOGLE_API_KEY
 )
-response = model.invoke("Hello Buddy!")
-response.content[-1]['text']
+
+# response = model.invoke("Hello Buddy!")
+# response.content[-1]['text']
 
 #========= =======
 
@@ -44,7 +52,8 @@ def search_latest_news_jobs(query):
 agent = create_agent(
     model = model,
     tools = [search_latest_news_jobs])
-agent
+
+# agent
 
 #====== ======
 
@@ -93,9 +102,9 @@ def main_agent(agent, query):
 
 #===== = =====
 
-code = main_agent(agent, "Rachit, GEN AI EXPERT")
-from IPython import display as DISPLAY
-DISPLAY.HTML(code)
+# code = main_agent(agent, "Rachit, GEN AI EXPERT")
+# from IPython import display as DISPLAY
+# DISPLAY.HTML(code)
 
 #======= ======
 
