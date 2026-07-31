@@ -18,10 +18,10 @@ st.title("AI RESUME GENRATION")
 st.write("""this app helps user to build customized professional
 resume with latest job apply links""")
 
-st.image("https://agent-resume-b4jnfsgs2yxg8yjaaaq3zy.streamlit.app/~/+/media/2d96fb9a04af7a6abd519054145c2855.png")
+st.image("bg.png")
 
 st.sidebar.title("Fill Important Data")
-st.sidebar.image("https://agent-resume-b4jnfsgs2yxg8yjaaaq3zy.streamlit.app/~/+/media/2d96fb9a04af7a6abd519054145c2855.png")
+st.sidebar.image("bg.png")
 
 GOOGLE_API_KEY = st.sidebar.text_input("Gemini API", type="password")
 GROQ_API_KEY = st.sidebar.text_input("Groq API", type="password")
